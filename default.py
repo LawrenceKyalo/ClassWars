@@ -23,3 +23,4 @@ class MyClass:
         """
         self.attribute = value
         
+        
