@@ -22,5 +22,7 @@ class MyClass:
         :param value: The new value for the attribute.
         """
         self.attribute = value
+
+    print("Test")
         
         
