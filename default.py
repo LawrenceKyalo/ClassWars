@@ -2,7 +2,7 @@ class MyClass:
     """
     A simple Python class example.
     """
-    #constructor
+    #constructor function
     def __init__(self, attribute):
         """
         Initialize the class with an attribute.
