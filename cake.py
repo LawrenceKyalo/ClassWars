@@ -28,11 +28,10 @@ class Cake:
         :return: The number of remaining slices.
         """
         if count > self.remaining_slices:
-            print(f"Not enough slices left. Only {self.remaining_slices} slices available.")
-            return self.remaining_slices
+            return (f"Not enough slices left. Only {self.remaining_slices} slices available.")            
         else:
             self.remaining_slices -= count
-            return self.remaining_slices
+            return (f"{count} slices sold. {self.remaining_slices} slices remaining.")
     
 spice_cake = Cake("spice", 18, 8)
 chocolate_cake = Cake("chocolate", 24, 6)
