@@ -27,7 +27,9 @@ class Cake:
         :param count: The number of slices to sell.
         :return: The number of remaining slices.
         """
-        if count > self.remaining_slices:
+        if count <= 0:
+            return (f"Invalid number of slices. Please enter a positive number.")
+        elif count > self.remaining_slices:
             return (f"Not enough slices left. Only {self.remaining_slices} slices available.")            
         else:
             self.remaining_slices -= count
