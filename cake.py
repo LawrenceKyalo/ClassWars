@@ -19,8 +19,8 @@ class Cake:
         """
         return f"This is a {self.kind} cake, priced at ${self.price} with {self.slices} slices."
     
+    
+    
 spice_cake = Cake("spice", 20, 8)
 chocolate_cake = Cake("chocolate", 25, 10)
 
-print(chocolate_cake.describe())
-print(spice_cake.describe())
