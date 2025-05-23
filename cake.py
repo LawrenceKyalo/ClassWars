@@ -2,14 +2,14 @@ show_expected_result = True
 show_hints = True
 
 class Cake:
-    def __init__(self, kind, price, slices):
+    def __init__(self, flavor, price, slices):
         """
         Initialize the Cake class with kind, price, and slices.
         :param kind: The type of cake.
         :param price: The price of the cake.
         :param slices: The number of slices in the cake.
         """
-        self.kind = kind
+        self.flavor = flavor
         self.price = price
         self.slices = slices
 
@@ -17,9 +17,18 @@ class Cake:
         """
         Returns a string describing the cake.
         """
-        return f"This is a {self.kind} cake, priced at ${self.price} with {self.slices} slices."
+        return f"This is a {self.flavor} cake, priced at ${self.price} with {self.slices} slices."
     
-    
+    def sell(self, count):
+        """
+        Sells a specified number of slices of the cake.
+        :param count: The number of slices to sell.
+        :return: The number of remaining slices.
+        """
+        if count > self.slices:
+            raise ValueError("Not enough slices available.")
+        self.slices -= count
+        return count * (self.price / self.slices)
     
 spice_cake = Cake("spice", 20, 8)
 chocolate_cake = Cake("chocolate", 25, 10)
