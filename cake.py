@@ -1,7 +1,12 @@
 show_expected_result = True
 show_hints = True
 
-class Cake:
+class Item:
+    def __init__(self, item_type, price):
+        self.item_type = item_type
+        self.price = price
+
+class Cake(Item):
     def __init__(self, flavor, price, slices):
         """
         Initialize the Cake class with kind, price, and slices.
@@ -9,6 +14,7 @@ class Cake:
         :param price: The price of the cake.
         :param slices: The number of slices in the cake.
         """
+        super().__init__("cake", price)
         self.flavor = flavor
         self.price = price
         self.slices = slices
