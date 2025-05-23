@@ -1,6 +1,7 @@
-show_expected_result = True
-show_hints = True
-
+# cake.py
+# This code defines a class structure for a cake shop, including an Item class and a Cake class.
+# The Item class represents a generic item with a type and price.
+# The Cake class inherits from Item and adds specific attributes and methods for cakes.
 class Item:
     def __init__(self, item_type, price):
         self.item_type = item_type
