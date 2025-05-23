@@ -4,7 +4,14 @@ show_hints = True
 class Item:
     def __init__(self, item_type, price):
         self.item_type = item_type
-        self.price = price
+        self._price = price
+
+    @property
+    def price(self):
+        """
+        Returns the price of the item.
+        """
+        return self._price
 
 class Cake(Item):
     def __init__(self, flavor, price, slices):
