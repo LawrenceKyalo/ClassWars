@@ -24,7 +24,7 @@ class Cake(Item):
         """
         super().__init__("cake", price)
         self.flavor = flavor
-        self.price = price
+        self._price = price
         self.slices = slices
         #self.sold_slices = 0
         self.remaining_slices = slices
