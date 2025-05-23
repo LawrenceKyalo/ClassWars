@@ -22,5 +22,5 @@ class Cake:
 spice_cake = Cake("spice", 20, 8)
 chocolate_cake = Cake("chocolate", 25, 10)
 
-chocolate_cake.describe()
-spice_cake.describe()
+print(chocolate_cake.describe())
+print(spice_cake.describe())
