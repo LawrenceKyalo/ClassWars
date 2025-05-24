@@ -54,8 +54,8 @@ class Cake(Item):
         return self.remaining_slices*(self.price/self.slices) == other.remaining_slices*(other.price/other.slices)
 
     def __lt__(self, other):
-        pass
-
+        return self.remaining_slices*(self.price/self.slices) < other.remaining_slices*(other.price/other.slices)
+    
     def __gt__(self, other):
         pass
     
