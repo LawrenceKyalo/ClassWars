@@ -14,17 +14,7 @@ class Item:
         """
         return self._price
     
-    def __eq__(self, other):
-        pass    
-
-    def __lt__(self, other):
-        pass
-
-    def __gt__(self, other):
-        pass
-
-    
-        
+           
 class Cake(Item):
     def __init__(self, flavor, price, slices):
         """
@@ -59,6 +49,15 @@ class Cake(Item):
         else:
             self.remaining_slices -= count
             return (f"{count} slices sold. {self.remaining_slices} slices remaining.")
+        
+    def __eq__(self, other):
+        return self.remaining_slices*(self.price/self.slices) == other.remaining_slices*(other.price/other.slices)
+
+    def __lt__(self, other):
+        pass
+
+    def __gt__(self, other):
+        pass
     
 spice_cake = Cake("spice", 18, 8)
 chocolate_cake = Cake("chocolate", 24, 6)
