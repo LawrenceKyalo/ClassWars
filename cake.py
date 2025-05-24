@@ -13,7 +13,18 @@ class Item:
         Returns the price of the item.
         """
         return self._price
+    
+    def __eq__(self, other):
+        pass    
 
+    def __lt__(self, other):
+        pass
+
+    def __gt__(self, other):
+        pass
+
+    
+        
 class Cake(Item):
     def __init__(self, flavor, price, slices):
         """
