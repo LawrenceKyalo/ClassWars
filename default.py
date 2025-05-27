@@ -9,6 +9,8 @@ class MyClass:
         :param attribute: Any value to initialize the class attribute.
         """
         self.attribute = attribute
+        #private attribute
+        self._private_attribute = "This is a private attribute"
 
     def get_attribute(self):
         """
