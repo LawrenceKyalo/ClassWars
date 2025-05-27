@@ -25,6 +25,15 @@ class MyClass:
         """
         self.attribute = value
 
+    def __eq__(self, value):
+        pass
+
+    def __lt__(self, value):
+        pass
+
+    def __gt__(self, value):
+        pass
+
     print("Test")
         
         
