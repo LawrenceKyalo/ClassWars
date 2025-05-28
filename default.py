@@ -12,6 +12,12 @@ class MyClass:
         #private attribute
         self._private_attribute = "This is a private attribute"
 
+    def private_attribute(self):
+        """
+        Returns the value of the private attribute.
+        """
+        return self._private_attribute
+
     def get_attribute(self):
         """
         Returns the value of the attribute.
