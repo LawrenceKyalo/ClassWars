@@ -62,8 +62,8 @@ class Cake(Item):
 spice_cake = Cake("spice", 18, 8)
 chocolate_cake = Cake("chocolate", 24, 6)
 
-print(spice_cake.sell(5))
-print(spice_cake.sell(4))
+#print(spice_cake.sell(5))
+#print(spice_cake.sell(4))
 
 print(chocolate_cake.sell(-1))
 print(chocolate_cake.sell(0))
