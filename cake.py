@@ -68,3 +68,8 @@ print(spice_cake.sell(4))
 print(chocolate_cake.sell(-1))
 print(chocolate_cake.sell(0))
 
+print(spice_cake.__eq__(chocolate_cake))
+print(spice_cake.__lt__(chocolate_cake))
+print(chocolate_cake.__gt__(spice_cake))
+
+
