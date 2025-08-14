@@ -1,5 +1,5 @@
 let = "python strings refresh"
-if 'ringers' in let:
-    print('Substring found')
-else:
+if 'ringers' not in let:
     print('Substring not found')
+else:
+    print('Substring found')
