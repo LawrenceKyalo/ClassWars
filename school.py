@@ -1,2 +1,2 @@
 let = "python strings refresh"
-print(len(let))
+print('ring' in let)
