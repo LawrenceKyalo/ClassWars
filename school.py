@@ -1,2 +1,5 @@
 let = "python strings refresh"
-print('ring' in let)
+if 'ring' in let:
+    print('Substring found')
+else:
+    print('Substring not found')
