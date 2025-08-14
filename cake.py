@@ -71,5 +71,6 @@ chocolate_cake = Cake("chocolate", 24, 6)
 print(spice_cake.__eq__(chocolate_cake))
 print(spice_cake.__lt__(chocolate_cake))
 print(chocolate_cake.__gt__(spice_cake))
+print(spice_cake.__gt__(chocolate_cake))
 
 
