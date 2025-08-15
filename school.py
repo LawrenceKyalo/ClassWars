@@ -1,7 +1,8 @@
 #lawrencekyalo09@gmail.com
-#get user input check forlength, @ and . return valid or invalid email
+#get user input check for length, @ and . return valid or invalid email
 
 email = input("Enter your email:")
+
 def is_valid_email(email):
     if len(email) < 5:
         return "Invalid email: too short"
