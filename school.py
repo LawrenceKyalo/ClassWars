@@ -3,6 +3,7 @@
 
 email = input("Enter your email:")
 email_cleaned = email.strip()
+user = email_cleaned.split('@')[0]
 def is_valid_email(email_cleaned):
     if len(email) < 5:
         return "Invalid email: too short"
@@ -22,6 +23,7 @@ result = is_valid_email(email_cleaned)
 
 print(result)
 print(email_cleaned[:])
+print('user: ', user)
 
 
 
