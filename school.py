@@ -20,7 +20,8 @@ def is_valid_email(email):
 
 result = is_valid_email(email)
 
-print(result, email)
+print(result)
+print(email[:])
 
 
 
