@@ -21,7 +21,7 @@ def is_valid_email(email_cleaned):
 result = is_valid_email(email_cleaned)
 
 print(result)
-print(email[:])
+print(email_cleaned[:])
 
 
 
