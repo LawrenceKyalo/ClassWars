@@ -2,8 +2,8 @@
 #get user input check for length, @ and . return valid or invalid email
 
 email = input("Enter your email:")
-
-def is_valid_email(email):
+email_cleaned = email.strip()
+def is_valid_email(email_cleaned):
     if len(email) < 5:
         return "Invalid email: too short"
     if '@' not in email or '.' not in email:
@@ -18,7 +18,7 @@ def is_valid_email(email):
         return "Invalid email: too many '.'"
     return "Valid email"
 
-result = is_valid_email(email)
+result = is_valid_email(email_cleaned)
 
 print(result)
 print(email[:])
