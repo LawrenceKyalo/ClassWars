@@ -25,6 +25,7 @@ result = is_valid_email(email_cleaned)
 print(result)
 print(email_cleaned[:])
 print('user: ', user)
+print('domain: ', domain)
 
 
 
