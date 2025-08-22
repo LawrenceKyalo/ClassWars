@@ -22,6 +22,7 @@ def is_valid_email(email_cleaned):
 
 #result = is_valid_email(email_cleaned)
 result = lambda email_cleaned: is_valid_email(email_cleaned)
+print(result(email_cleaned))
 
 #print(result)
 #print(email_cleaned[:])
