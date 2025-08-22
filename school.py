@@ -20,7 +20,8 @@ def is_valid_email(email_cleaned):
         return "Invalid email: too many '.'"
     return "Valid email"
 
-result = is_valid_email(email_cleaned)
+#result = is_valid_email(email_cleaned)
+result = lambda email_cleaned: is_valid_email(email_cleaned)
 
 #print(result)
 #print(email_cleaned[:])
